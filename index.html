@@ -1,47 +1,511 @@
-<!DOCTYPE html>
-<html lang="ko">
- <head>
-  <meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-  
-<meta http-equiv="refresh" content="5;url=main.html">
-  <link rel="stylesheet" href="CSS/common.css">
- <link rel="stylesheet" href="CSS/loading.css">
- <link rel="stylesheet" href="CSS/aos.css">
- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> 
- <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/aos.js"></script>
-<script src="js/pace.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>롯데제과</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/master.css" />
+<link rel="stylesheet" href="CSS/jquery.fullpage.css" />
+<link rel="stylesheet" type="text/css" href="CSS/jquery.incremental-counter.css" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> 
 
-  <title>OH! Hyerim Portfolio</title>
- </head>
- <body>
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.incremental-counter.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
+<script src="js/top.js" /></script>
+<script src="js/years.js" /></script>
 
 
-<section id="main_content">
-	 <div class="portfolio">
-		<div class="fadein">
-			<span>P</span>
-			<span>O</span>
-			<span>R</span>
-			<span>T</span>
-			<span>F</span>
-			<span>O</span>
-			<span>L</span>
-			<span>I</span>
-			<span>O</span>
-			
-		</div>
-		<a id="go_main" href="main.html"></a><h4 data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear" data-aos-easing="ease-in-back">UX/UI Hybrid Web Portfolio Designed By Hyerim</h4>
-	</div>
-	<div class="pace"></div>
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="CSS/swiper.css">
+
+  <!-- Demo styles -->
+  <style>/*
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }*/
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+	.swiper-container img {
+		/*width: 100%;*/
+		
+	}
 	
+    .swiper-slide {
+	  width: 100%;
+      text-align: center;
+      font-size: 18px;
 
-</script>
-</section>
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	/*.news_swiper{
+		height: 50%;
+	}*/
+	.news_swiper img{width:100%;}
+	
+	@media screen and (min-width: 768px){
+		.swiper-slide img.banner_pc{
+			display: block;
+		}	
+	.swiper-slide img.banner_mobile {
+			display: none;
+		}
+		/*.swiper-container{
+			margin-top:95px;
+		}*/
+	}
+
+	@media screen and (max-width: 767px){
+		.swiper-slide img.banner_pc{
+			display: none;
+	}	
+		.swiper-slide img.banner_mobile {
+			display: block;
+		}
+		/*.swiper-container{
+			margin-top: 50px;
+		}*/
+	}
+</style>
+
+</head>
+<body>
 <script>
-  AOS.init();
-</script>
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
 
- </body>
+		/*afterResponsive: function (isResponsive) {
+		}*/
+		afterResize: function (width, height) {
+		}
+	});
+});
+</script>
+<input id="toggle_menu" type="checkbox">
+<div id="fullpage">
+<!--헤더-->
+
+<header id="main_header">
+	<nav id="top_nav">
+		<h1 id="logo"><a href="#"><img src="images/logo.png" alt="롯데제과"></a></h1>
+	</nav>
+	<div class="util">
+		<!--LOGIN-->
+		<div class="login">
+			<ul>
+				<li id="login"><a href="login.html">LOGIN</a><li>
+				<li><a href="join.html">JOIN (L.POINT)</a><li>
+			</ul>
+		</div>
+		<!--//LOGIN-->
+
+		<!--언어선택-->
+		<div class="language_wrap">
+			<input id="language" type="checkbox">
+			<label class="language" for="language">language</label>
+			
+			<div>
+				<ul>
+					<li>KOR</li>
+					<li>ENG</li>
+					<li>CH</li>
+				</ul>
+			</div>
+		</div>
+		<!--//언어선택-->
+
+		<!--고객센터-->
+		<div class="cs_wrap">
+			<input id="cs" type="checkbox">
+			<label class="cs" for="cs">고객센터</label>
+			
+			<div>
+				<ul>
+					<li>자주묻는질문</li>
+					<li>1:1이메일문의</li>
+				</ul>
+			</div>
+		</div>
+		<!--//고객센터-->
+	</div>
+
+	<!--메뉴-->
+	<nav id="main_nav">
+		<div class="gnb_box">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">제품소개</a></li>
+				<li><a href="#">미디어</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+		</div>
+	</nav>
+	<label class="toggle_menu" for="toggle_menu"></label>
+	<!--//메뉴-->
+
+</header> 
+<!--//헤더-->
+
+<!--배너-->
+	<div class="section banner" >
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide_wrap1">
+					<p class="text">
+						사랑과 우정의 메신저,<Br>
+						빼빼로
+					</p>
+					<img class="banner_pc" src="images/banner2.png" alt="배너">
+					<img class="banner_mobile" src="images/m_banner22.png" alt="배너">
+				</div>
+
+				<div class="swiper-slide slide_wrap2">
+					<p class="text">
+						내 마음에 부드러움 한 조각,<Br>
+						가나초콜릿
+					</p>
+					<img class="banner_pc" src="images/banner1.png" alt="배너">
+					<img class="banner_mobile" src="images/m_banner11.png" alt="배너">
+				</div>
+				
+				<div class="swiper-slide slide_wrap3">
+					<p class="text">
+						콘 아이스크림의 절대 강자,<Br>
+						월드콘
+					</p>
+					<img class="banner_pc" src="images/banner3.png" alt="배너">
+					<img class="banner_mobile" src="images/m_banner33.png" alt="배너">
+				</div>
+			</div>
+		<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
+	<!-- Swiper JS -->
+	<script src="js/swiper.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+	  spaceBetween: 0,
+	  centeredSlides: true,
+	  autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	  },
+	  pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },speed:1500,
+	});
+  </script>
+	</div>
+<!--//배너-->
+
+	<!--연도-->
+	
+	<div class="section years">
+		<h2 class="title">브랜드 이야기</h2>
+		<p class="sub_title">롯데제과 브랜드의 숨은 이야기를 만나보세요!</p>
+		<div>
+			<input id="ggo" type="radio" name="years" checked>
+			<div class="container ggo">
+				<div class="incremental-counter" data-value="1983"></div>
+				<img class="incremental-image" src="images/ggo_1983.png" />
+				<div class="prd_point">
+					<strong class="tit">꼬깔콘 <em>Since 1983</em></strong>
+					<span class="stit">아이들이 먼저 찾는, 먹을수록 맛있는 바삭하고 고소한 꼬깔콘!</span>
+				</div>
+			</div>
+			<label class="ggo1" for="ggo">꼬깔콘</label>
+			
+			<input id="ghana" type="radio" name="years">
+		
+			<div class="container ghana">
+				<div class="incremental-counter" data-value="1975"></div>
+				<img class="incremental-image" src="images/ghana_19751.png" />
+				<div class="prd_point">
+					<strong class="tit">가나초콜릿 <em>Since 1975</em></strong>
+					<span class="stit">세계 최고, 최대의 카카오 산지 가나의 카카오 빈으로 만들어집니다.</span>
+				</div>
+				
+			</div>
+			<label class="ghana1" for="ghana">가나초콜릿</label>
+
+			<input id="world" type="radio" name="years">
+			<div class="container world">
+				<div class="incremental-counter" data-value="1986"></div>
+				<img class="incremental-image" src="images/world_1986.png" />
+				<div class="prd_point">
+					<strong class="tit">월드콘 <em>Since 1986</em></strong>
+					<span class="stit">♬뭐니 뭐니 해도 맛있는콘! 월드콘!</span>
+				</div>
+			</div>
+			<label class="world1" for="world">월드콘</label>
+
+			<input id="bba" type="radio" name="years">
+			<div class="container bba">
+				<div class="incremental-counter" data-value="1983"></div>
+				<img class="incremental-image" src="images/bbae_1983.png" />
+				<div class="prd_point">
+					<strong class="tit">빼빼로 <em>Since 1983</em></strong>
+					<span class="stit">전국민이 사랑하는 날씬하고 맛좋은 빼빼로</span>
+				</div>
+			</div>
+			<label class="bba1" for="bba">빼빼로</label>
+	
+		</div>
+	</div>
+
+<!--//연도-->
+
+	<!--뉴스-->
+	<div class="section news">
+		<h2 class="title">생생한 이야기</h2>
+		<p class="sub_title">롯데제과의 공지사항과 새소식을 만나보세요</p>
+		<div id="news">
+			<div class="swiper-container news_swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide new_swiper">
+						<div>
+							<div class="img_box">
+								<img class="news_img" src="images/news_1.png" alt="‘생생빵상회’ 출시 한 달만에 3만개 판매" />
+								<img class="news_img_t"src="images/newst_1.png" alt="‘생생빵상회’ 출시 한 달만에 3만개 판매" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">보도자료</h5>
+								<p class="news_subtitle">‘생생빵상회’ 출시 한 달만에 3만개 판매</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide new_swiper">
+						<div>
+				
+							<div class="img_box">
+								<img class="news_img" src="images/news_2.png" alt="‘크런키’, 광고모델로 피오 발탁" />
+								<img class="news_img_t" src="images/newst_2.png" alt="‘크런키’, 광고모델로 피오 발탁" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">보도자료</h5>
+								<p class="news_subtitle">‘크런키’, 광고모델로 피오 발탁</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_3.png" alt="‘칙촉 브라우니’, 출시 2개월만에 300만봉 판매 돌파" />
+								<img class="news_img_t" src="images/newst_3.png" alt="‘칙촉 브라우니’, 출시 2개월만에 300만봉 판매 돌파" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">보도자료</h5>
+								<p class="news_subtitle">‘칙촉 브라우니’, 출시 2개월만에 300만봉 판매 돌파</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_4.png" alt="봄 시즌 맞아 딸기 활용한 제품 5종 선보여" />
+								<img class="news_img_t" src="images/newst_4.png" alt="봄 시즌 맞아 딸기 활용한 제품 5종 선보여" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">공지사항</h5>
+								<p class="news_subtitle">봄 시즌 맞아 딸기 활용한 제품 5종 선보여</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_5.png" alt="밸런타인데이 맞아 길리안 팝업스토어 오픈" />
+								<img class="news_img_t" src="images/newst_5.png" alt="밸런타인데이 맞아 길리안 팝업스토어 오픈" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">공지사항</h5>
+								<p class="news_subtitle">밸런타인데이 맞아 길리안 팝업스토어 오픈</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_6.png" alt="‘찰떡아이스 하트딸기’ 출시" />
+								<img class="news_img_t" src="images/newst_6.png" alt="‘찰떡아이스 하트딸기’ 출시" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">공지사항</h5>
+								<p class="news_subtitle">‘찰떡아이스 하트딸기’ 출시</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_7.png" alt="올해도 계속되는 ‘과자나눔’ 캠페인" />
+								<img class="news_img_t" src="images/newst_7.png" alt="올해도 계속되는 ‘과자나눔’ 캠페인" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">사회공헌</h5>
+								<p class="news_subtitle">올해도 계속되는 ‘과자나눔’ 캠페인</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_8.png" alt="연말 연시를 맞아 따뜻한 나눔 활동 전개" />
+								<img class="news_img_t" src="images/newst_8.png" alt="연말 연시를 맞아 따뜻한 나눔 활동 전개" />
+							</div>
+							<div class="text_box">
+								<h5 class="brand_title">사회공헌</h5>
+								<p class="brand_subtitle">연말 연시를 맞아 따뜻한 나눔 활동 전개</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide new_swiper">
+						<div>
+
+							<div class="img_box">
+								<img class="news_img" src="images/news_9.png" alt="빼빼로데이 맞아 ‘사랑의열매’에 제품 전달" />
+								<img class="news_img_t" src="images/newst_9.png" alt="빼빼로데이 맞아 ‘사랑의열매’에 제품 전달" />
+							</div>
+							<div class="text_box">
+								<h5 class="news_title">사회공헌</h5>
+								<p class="news_subtitle">빼빼로데이 맞아 ‘사랑의열매’에 제품 전달</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <!-- Initialize Swiper -->
+				<script>
+				var m=matchMedia("screen and ( min-width:1024px)");
+				if(m.matches){
+					var swiper = new Swiper('.news_swiper', {
+						slidesPerView: 3,
+						spaceBetween: 50,
+						loop: true,
+						centeredSlides: true,
+						autoplay: {
+						delay: 5000,
+						},speed:1500,
+					});
+				}
+				else{
+					var swiper = new Swiper('.news_swiper', {
+						slidesPerView: 1.5,
+						spaceBetween: 5,
+						loop: true,
+						centeredSlides: true,
+						autoplay: {
+						delay: 5000,
+						},speed:1500,
+					});
+				}
+				</script>
+		</div>
+
+	</div>
+<!--//뉴스-->
+
+	<!--cf-->
+	<div class="section cf">
+		<h2 class="title">TV CF</h2>
+		<p class="sub_title">롯데제과의 이야기</p>
+		<figure class="video">
+			<div class="video_box">
+				<ul>
+					<a href="https://youtu.be/RhGtyelW_NM" target="_blank"><li><h4>피오랑 바삭하게 크런키해</h4></li></a>
+					<a href="https://youtu.be/kB6oDAR87-c" target="_blank"><li><h4>꼬깔콘X매드클라운</h4></li></a>
+					<a href="https://www.youtube.com/watch?v=itYUjjAVqsI" target="_blank"><li><h4>몽쉘이이기</h4></li></a>
+				</ul>
+			</div>
+		</figure>
+		<figure class="sns">
+			<div class="sns_box">
+				<h4 class="text">더 많은 정보를 확인하세요!</h4>
+				<ul>
+					<li><a class="youtu" href="https://www.youtube.com/user/LotteCF" target="_blank" style="display: inline-block;"></a></li>
+					<li><a class="face" href="https://www.facebook.com/lotteconf" target="_blank" style="display: inline-block;"></a></li>
+					<li><a class="insta" href="https://www.instagram.com/lotte_cf/" target="_blank" style="display: inline-block;"></a></li>
+					<li><a class="blog" href="https://blog.naver.com/lotteblog" target="_blank" style="display: inline-block;"></a></li>
+				</ul>
+			</div>
+		</figure>
+	</div>
+	<!--//cf-->
+
+	<!--푸터-->
+	<footer id="footer">
+		<div>
+			<button id="btn_top" style="display: inline-block;">
+				<span class="btn_txt">Top</span>
+			</button>
+			<h1 id="f_logo"></h1>
+			<address>서울특별시 영등포구 양평로 21길 10</address>
+			<p class="tel">TEL : <a href="tel:080-024-6060">080-024-6060</a>(이용시간 평일 <a>09:00~18:00</a>)</p>
+			<ul>
+				<li>롯데윤리강령</li>
+				<li>개인정보처리방침  </li>
+			</ul>
+		
+			<p class="copyright">COPYRIGHT 2013 LOTTE CONFECTIONERY CO.LTD. ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+	<!--푸터-->
+
+
+</div>
+</body>
 </html>

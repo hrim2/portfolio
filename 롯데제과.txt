@@ -1,0 +1,123 @@
+﻿빨간샌ㄱ
+d21c34
+
+내 마음에 부드러움 한 조각,
+가나초콜릿
+
+사랑과 우정의 메신저,
+빼빼로
+
+콘 아이스크림의 절대 강자, 
+월드콘!
+
+
+선 ccc
+중간 글씨색 888
+
+
+꼬깔콘 1983/2016
+아이들이 먼저 찾는, 먹을수록 맛있는 바삭하고 고소한 꼬깔콘!
+숫자 e40613
+
+가나 1975/2015 
+세계 최고, 최대의 카카오 산지 가나의 카카오 빈으로 만들어집니다.
+숫자 561b1f
+
+가나초콜릿 30 since 16
+문구 15 666
+
+
+월드콘 1986/2019
+♬뭐니 뭐니 해도 맛있는콘! 월드콘!
+숫자 0f0b83
+
+
+
+
+
+빼뺴로 1983/ 2012
+전국민이 사랑하는 날씬하고 맛좋은 빼빼로
+
+숫자 e40613
+
+
+브랜드 이야기 55
+롯데제과 브랜드의 숨은 이야기를 만나실 수 있습니다. 25
+
+
+보도자료
+
+롯데제과, ‘생생빵상회’ 출시 한 달만에 3만개 판매
+
+롯데제과 ‘크런키’, 광고모델로 피오 발탁
+
+롯데제과 ‘칙촉 브라우니’, 출시 2개월만에 300만봉 판매 돌파
+
+
+공지사항
+롯데제과, 봄 시즌 맞아 딸기 활용한 제품 5종 선보여
+
+롯데제과, 밸런타인데이 맞아 길리안 팝업스토어 오픈
+
+롯데제과, ‘찰떡아이스 하트딸기’ 출시
+
+사회공헌
+
+롯데제과, 올해도 계속되는 ‘과자나눔’ 캠페인
+
+롯데제과, 연말 연시를 맞아 따뜻한 나눔 활동 전개
+
+롯데제과, 빼빼로데이 맞아 ‘사랑의열매’에 제품 전달
+
+피오랑 바삭하게 크런키해 
+꼬깔콘X매드클라운
+몽쉘이이기
+
+COPYRIGHT 2013 LOTTE CONFECTIONERY CO.LTD. ALL RIGHTS RESERVED
+
+
+@media screen and (max-width: 1366px)
+	{.swiper-container img{
+		/*width: 100%;*/
+		height: 100%;
+		position: absolute;
+		right: -40%; top: 0;
+		}
+	}
+	@media screen and (max-width: 1024px)
+	{.swiper-container img{
+		/*width: 100%;*/
+		height: 100%;
+		position: absolute;
+		right: -60%; top: 0;
+		}
+	}
+	@media screen and (max-width: 767px)
+	{.swiper-container img{
+		/*width: 100%;*/
+		height: 100%;
+		position: absolute;
+		right: 0; top: 0;
+		}
+	}
+
+
+
+
+<div class="slide_wrap1">
+					<p class="text">
+						내 마음에 부드러움 한 조각,<Br>
+						가나초콜릿
+					</p>
+					
+					<div class="inside1">
+						<p class="text1">
+						CHOCOLATE
+						</p>
+					</div>
+					<div class="circle1">
+						<img class="banner_pc" src="images/banner1.png" alt="배너">
+						<img class="banner_mobile" src="images/m_banner1.png" alt="배너">
+					</div>
+					
+				</div>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>로그인페이지</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/sub.css" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/top.js" /></script>
+</head>
+<body>
+<input id="toggle_menu" type="checkbox">
+<header id="main_header">
+	<nav id="top_nav">
+		<h1 id="logo"><a href="#"><img src="images/logo.png" alt="롯데제과"></a></h1>
+	</nav>
+	<div class="util">
+		<!--LOGIN-->
+		<div class="login">
+			<ul>
+				<li id="login"><a href="login.html">LOGIN</a><li>
+				<li><a href="join.html">JOIN (L.POINT)</a><li>
+			</ul>
+		</div>
+		<!--//LOGIN-->
+
+		<!--언어선택-->
+		<div class="language_wrap">
+			<input id="language" type="checkbox">
+			<label class="language" for="language">language</label>
+			
+			<div>
+				<ul>
+					<li>KOR</li>
+					<li>ENG</li>
+					<li>CH</li>
+				</ul>
+			</div>
+		</div>
+		<!--//언어선택-->
+
+		<!--고객센터-->
+		<div class="cs_wrap">
+			<input id="cs" type="checkbox">
+			<label class="cs" for="cs">고객센터</label>
+			
+			<div>
+				<ul>
+					<li>자주묻는질문</li>
+					<li>1:1이메일문의</li>
+				</ul>
+			</div>
+		</div>
+		<!--//고객센터-->
+	</div>
+
+	<!--메뉴-->
+	<nav id="main_nav">
+		<div class="gnb_box">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">제품소개</a></li>
+				<li><a href="#">미디어</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+		</div>
+	</nav>
+	<label class="toggle_menu" for="toggle_menu"></label>
+	<!--//메뉴-->
+
+</header> 
+<!--//헤더-->
+<!--푸터-->
+	<footer id="footer">
+		<div>
+			<button id="btn_top" style="display: inline-block;">
+				<span class="btn_txt">Top</span>
+			</button>
+			<h1 id="f_logo"></h1>
+			<address>서울특별시 영등포구 양평로 21길 10</address>
+			<p class="tel">TEL : <a href="tel:080-024-6060">080-024-6060</a>(이용시간 평일 <a>09:00~18:00</a>)</p>
+			<ul>
+				<li>롯데윤리강령</li>
+				<li>개인정보처리방침  </li>
+			</ul>
+		
+			<p class="copyright">COPYRIGHT 2013 LOTTE CONFECTIONERY CO.LTD. ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+	<!--푸터-->
+</body>
+</html>

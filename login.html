@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>로그인페이지</title>
+<link rel="stylesheet" href="CSS/common.css" />
+<link rel="stylesheet" href="CSS/sub.css" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/sub_top.js" /></script>
+</head>
+<body>
+<!----><input id="toggle_menu" type="checkbox">
+<header id="main_header">
+	<nav id="top_nav">
+		<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="롯데제과"></a></h1>
+	</nav>
+	<div class="util">
+		<!--LOGIN-->
+		<div class="login">
+			<ul>
+				<li id="login"><a href="login.html">LOGIN</a><li>
+				<li><a href="join.html">JOIN (L.POINT)</a><li>
+			</ul>
+		</div>
+		<!--//LOGIN-->
+
+		<!--언어선택-->
+		<div class="language_wrap">
+			<input id="language" type="checkbox">
+			<label class="language" for="language">language</label>
+			
+			<div>
+				<ul>
+					<li>KOR</li>
+					<li>ENG</li>
+					<li>CH</li>
+				</ul>
+			</div>
+		</div>
+		<!--//언어선택-->
+
+		<!--고객센터-->
+		<div class="cs_wrap">
+			<input id="cs" type="checkbox">
+			<label class="cs" for="cs">고객센터</label>
+			
+			<div>
+				<ul>
+					<li>자주묻는질문</li>
+					<li>1:1이메일문의</li>
+				</ul>
+			</div>
+		</div>
+		<!--//고객센터-->
+	</div>
+
+	<!--메뉴-->
+	<nav id="main_nav">
+		<div class="gnb_box">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">제품소개</a></li>
+				<li><a href="#">미디어</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+		</div>
+	</nav>
+	<label class="toggle_menu" for="toggle_menu"></label>
+	<!--//메뉴-->
+</header> 
+<!--//헤더-->
+<!--login-->
+<div id="login_wrap">
+	<div class="login_form">
+		<h2 class="login_tit">로그인</h2>
+		<h3 class="login_subtit">롯데 L.POINT 회원 아이디와 비밀번호로 로그인 하여 주세요. </h2>
+
+		<fieldset>
+			<legend>로그인 정보 입력</legend>
+			<div class="inp_txt_wrap">
+				<label for="login_id"></label>
+				<input type="text" name="login_id" id="login_id" class="login_txt" placeholder="아이디/이메일" maxlength="100">
+			</div>
+			<div class="inp_txt_wrap">
+				<label for="pswd"></label>
+				<input type="password" name="pswd" id="pswd" class="login_txt" placeholder="비밀번호">
+			</div>
+			<div class="inp_che_wrap">
+				<input type="checkbox" id="saveId" class="inp_che">
+				<label for="saveId">아이디저장</label>
+			</div>
+			<button type="button" class="btn_submit"><span class="txt_login">로그인</span></button>
+			<ul class="bar_search">
+				<li><a href="#">아이디찾기</a></li>
+				<li><a href="#">비밀번호찾기</a></li>
+				<li><a href="#">회원가입</a></li>
+			</ul>
+		</fieldset>
+	</div>
+</div>
+<!--//login-->
+<!--푸터-->
+	<footer id="footer">
+		<div>
+			<button id="sub_btn_top" style="display: inline-block;">
+				<span class="btn_txt">Top</span>
+			</button>
+			<h1 id="f_logo"></h1>
+			<address>서울특별시 영등포구 양평로 21길 10</address>
+			<p class="tel">TEL : <a href="tel:080-024-6060">080-024-6060</a>(이용시간 평일 <a>09:00~18:00</a>)</p>
+			<ul>
+				<li>롯데윤리강령</li>
+				<li>개인정보처리방침  </li>
+			</ul>
+		
+			<p class="copyright">COPYRIGHT 2013 LOTTE CONFECTIONERY CO.LTD. ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+	<!--푸터-->
+</body>
+</html>
