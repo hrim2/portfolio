@@ -1,0 +1,164 @@
+/*common.css*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700');
+
+/* Jost */
+
+@font-face {
+	font-family: 'jost';
+}
+
+/*******LotteMartHappy*******/
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('../lotte/fonts/LotteMartHappyMedium.woff2') format('woff2'), url('../lotte/fonts/LotteMartHappyMedium.woff') format('woff'); } @font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('../lotte/fonts/LotteMartHappyBold.woff2') format('woff2'), url('../lotte/fonts/LotteMartHappyBold.woff') format('woff'); } .lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
+@font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 400; src: url('../lotte/fonts/LotteMartDreamMedium.woff2') format('woff2'), url('../lotte/fonts/LotteMartDreamMedium.woff') format('woff'); } @font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 700; src: url('../lotte/fonts/LotteMartDreamBold.woff2') format('woff2'), url('../lotte/fonts/LotteMartDreamBold.woff') format('woff'); } @font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 300; src: url('../fonts/LotteMartDreamLight.woff2') format('woff2'), url('../lotte/fonts/LotteMartDreamLight.woff') format('woff'); } .lottemartdream * { font-family: 'LotteMartDream', sans-serif; }
+
+/* Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess */
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+	src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+/* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess */ 
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 100; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 500; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype'); 
+}
+
+
+*{margin: 0; padding: 0;}
+html, body{
+	font: 18px / normal 'Catamaran', 'Nanum Gothic','Noto Sans KR', 'LotteMartHappy', sans-serif; font-weight: 500; color: #424242;
+}
+table, tr, th, td{
+	font: 18px / normal 'Catamaran', 'Nanum Gothic','Noto Sans KR', 'LotteMartHappy', sans-serif; font-weight: 500; color: #424242;
+	border-collapse: collapse;
+}
+input, select, option, textarea, button{
+	font: 18px / normal 'Catamaran', 'Nanum Gothic','Noto Sans KR', 'LotteMartHappy', sans-serif; font-weight: 500; color: #424242;
+	border-radius:0;
+	border: none;
+	outline: none; /* input클릭시 파란테두리 */
+	background: transparent;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 18px;
+	font-weight: 500;
+	color: #424242;
+}
+b, strong{
+	font-weight: 500;
+	color: #424242;
+}
+i, em, address{
+	font-style: normal;
+	color: #424242;
+}
+ul, ol, li{
+	list-style: none;
+	color: #424242;
+}
+a, img, label{
+	display: block;
+	color: #424242;
+}
+img, fieldset, iframe, frameset{
+	border: none;
+}
+legend, caption, hr{
+	display: none;
+
+}
+a{
+	text-decoration:none;
+	color: #424242;
+}
+form{
+	color: #424242;
+}
+
+
+
+/*****STYLE**********/
+input#pcimg01, input#pcimg02, input#tbimg01, input#tbimg02, input#moimg01, input#moimg02{
+	display: none;
+}
+.skip, .blind{
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+	position: absolute;
+	top: -6000px;
+}

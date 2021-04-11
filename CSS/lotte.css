@@ -1,0 +1,655 @@
+/*geopyoung.css*/
+
+/*******헤더*******/
+#main_header{
+	width: 100%;
+	position:fixed;
+	height: 90px;
+	font-size: 20px;
+	z-index: 1;
+	top:0; left: 0;
+}
+	#main_logo{
+		position: absolute;
+		left: 3%;
+		bottom: 2%;
+		font-size: 20px;
+		z-index: 100;
+	}
+	#contact{
+		position: absolute;
+		right: 3%;
+		bottom: 2%;
+		overflow:hidden;
+		z-index: 100;
+	}
+/********컨텐츠*********/
+.ari{
+	font-family: 'AritaDotum';
+}
+.noto{
+	font-family: 'Noto Sans KR'; font-weight: 300; font-size: 16px;
+}
+
+/******상단*****/
+#top{
+		padding-top: 70px;
+		background-color: #fff;
+		width: 100%;
+		height: 1200px;
+		background: url(../images/lotte/lotte_top.png) no-repeat;
+		background-attachment:fixed;
+		background-position: center center;
+		background-size:contain;
+}
+@media screen and (max-width:1366px){
+	#top{
+		height: 100vh;
+		background-position:50% 50%;
+		background-attachment:unset;
+	}
+}
+@media screen and (max-width:767px){
+	#top{
+		background-position:50% 30%;
+	}
+}
+
+#top > div > h1 {
+	display: block;
+	text-align: center;
+	font-size: 48px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 0 0 8px rgba(85,27,31,0.7);
+	margin-top: 250px;
+	padding: 20px;
+	letter-spacing: 3px;
+	}
+@media screen and (max-width:1366px){
+	#top > div > h1 {
+		margin-top: 400px;
+	}
+}
+
+@media screen and (max-width:767px){
+	#top > div > h1{
+		margin-top: 35%;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:320px){
+	#top > div > h1{
+		margin-top: 23%;}
+}
+#top > div .go{
+	text-align: center;	
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	width: 180px; height: 40px;
+	margin: 0 auto;
+	font-weight: 600;
+	
+}
+@media screen and (max-width:633px){
+	#top > div .go{
+		width: 120px;
+		height: 30px;
+	}
+}
+#top > div .go:hover{
+	background: #fff;
+}
+#top > div .go a{
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+}
+@media screen and (max-width:633px){
+	#top > div .go a{font-size: 13px; line-height: 30px;}
+}
+#top > div .go:hover a{
+	color: #e83740;
+	
+}
+/*******컨테이너******/
+#container{
+	background-color: #fff4f4;
+	padding-top: 300px;
+	padding-bottom: 80px;
+	margin-top: -35vh;
+	position: relative;
+}
+@media screen and (max-width:1366px){
+#container{
+	margin-top: -5vh;
+}
+}
+@media screen and (max-width:767px){
+	#container{
+		margin-top: -35vh;
+		padding-top:250px;
+	}
+}
+	#info{
+		width: 1200px;
+		margin: 0 auto;
+		
+	}
+	@media screen and (max-width:1366px) {
+		#info{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 30px;
+		}
+	}
+
+	#logo{
+		position: absolute;
+		background:url(../images/lotte/logo.png) no-repeat;
+		width: 180px; height: 65px;
+		background-size: cover;
+		top:100px; left:50%; margin-left: -90px;
+		
+	}
+	#concept,
+	#typography,
+	#color{
+		overflow: hidden;
+	}
+	.title{
+		width: 300px;
+		float: left;
+		font-size: 18px;
+		font-weight: 600;
+
+	}
+	.dsc{
+		float: left;
+		width: 600px;
+		margin-top: 20px;
+	}
+
+	@media screen and (max-width:1366px){
+		.title,
+		.dsc{
+			width: 100%;
+			float: none;
+		}
+	}
+	#concept .dsc p{
+	}
+
+	#typography{
+		margin-top: 50px;
+	}
+	#typography .happy{
+		font-family: 'LotteMartHappy';
+		font-size: 16px;
+	}
+	#typography p{
+		margin-top: 10px;
+	}
+	#typography strong{
+		font-size: 23px;
+		font-weight: 700;
+		margin-right:20px;
+	}
+	#color{
+		margin-top: 50px;
+	}
+	#color .dsc{
+		overflow:hidden;
+	}
+	#color .color{
+		width: 120px;
+		height: 120px;
+		margin-right: 20px;
+		float: left;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 120px;
+		color: #fff;
+	}
+	#color .color:nth-of-type(1){
+		background: #e83740;
+		
+	}
+	#color .color:nth-of-type(2){
+		background: #10894f;
+	}
+	#color .color:nth-of-type(3){
+		background: #551b1f;
+	}
+	@media screen and (max-width:767px){
+		#color .color{
+		width: 105px;
+		height: 105px;
+		margin-right: 0;
+		line-height: 105px;
+		}
+	}
+	@media screen and (max-width:374px){
+		#color .color{
+		width: 85px;
+		height: 85px;
+		line-height: 85px;
+		}
+	}
+
+/********컨텐츠*******/
+#contents{
+	width: 100%;
+	
+}
+	#contents input{
+	display: none;
+}
+#pcimg01 + .pcwrap01,
+#pcimg02 + .pcwrap02,
+#tbimg01 + .tbwrap01,
+#tbimg02 + .tbwrap02,
+#moimg01 + .mowrap01,
+#moimg02 + .mowrap02{
+	display: none;
+}
+input#pcimg01:checked + .pcwrap01,
+input#pcimg02:checked + .pcwrap02,
+input#tbimg01:checked + .tbwrap01,
+input#tbimg02:checked + .tbwrap02,
+input#moimg01:checked + .mowrap01,
+input#moimg02:checked + .mowrap02{
+	display: block;
+}
+
+	article{
+		width: 100%;
+		height: 200px;
+	}
+	article > h2{
+		text-align: center;
+		padding-top: 40px;
+		font-size: 36px;
+		color: #fff;
+		text-shadow: 0 0 8px #e83740;
+		line-height: 42px;
+		margin-top: 150px;
+	}
+	@media screen and (max-width:1366px){
+		padding-top: 0;
+	}
+	article > ul{
+		overflow: hidden;
+		width: 280px;
+		margin: 25px auto 0;
+	}
+		article > ul > li{
+			float: left;
+			
+			text-align:center;
+		}
+		article > ul > li > label {
+			cursor: pointer;
+			position: relative;
+			z-index: 9999;
+		}
+		article > ul > li > label{
+			background: rgba(66,66,66,0.5);
+			border-radius: 10px;
+			color: #fff;
+			width: 130px;
+			height: 30px;
+			margin-right: 10px;
+			line-height: 30px;
+		}
+		article > ul > li > label.active{
+			background: #fff;
+			color: #e83740;
+			border: 2px solid #e83740;
+			box-sizing: border-box;
+		}
+		@media screen and (max-width:450px){
+			article > ul{
+				width: 200px;
+				margin: 25px auto 0;
+			}
+			article > ul > li > label{
+				width: 90px;
+			}
+		}
+		
+		article h3{
+			text-align: center;
+			margin-top: 750px;
+		}
+
+		article p{
+			text-align: center;
+			display: block;
+		}
+		.imgwrap {
+			position: absolute;
+			margin: 0 auto;
+			overflow-y: auto;
+			overflow-x: hidden;
+			
+		}	
+	@media screen and (max-width:785px){
+		article h3{
+			margin-top: 400px;
+		}
+	}	
+		
+/********PC*********/
+		#pc{
+			width: 100%; height: auto;
+			position: relative;
+		}
+		@media screen and (min-width:786px){
+			#pc{
+				height: 1150px;
+			}
+		}
+
+		@media screen and (max-width:785px){
+			#pc{
+				height: 750px;
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+		}
+		.pc{
+			background:url(../images/lotte/pc.png) no-repeat center;
+			position: absolute;
+		}
+		@media screen and (min-width:786px){
+			.pc{
+				width: 776px;
+				height: 649px;
+				top: 226px; left:50%; margin-left: -388px;
+			}
+		}
+		@media screen and (min-width: 786px){
+			#pc .imgwrap{
+				width: 699px;
+				height: 392px;
+				top: 259px; left: 50%; margin-left: -353px;
+			}
+		}
+		@media screen and (max-width:785px){
+			.pc{
+				width: 350px;
+				height: 649px;
+				top: 57px; left:50%; margin-left: -175px;
+				background-size: contain;
+			}
+		}
+		@media screen and (max-width:785px){
+			#pc .imgwrap{
+				width: 330px;
+				height: 168px;
+				top: 259px; left: 50%; margin-left: -165px;
+			}
+		}
+
+		@media screen and (max-width:450px){
+			.pc{
+				width: 300px;
+				height: 649px;
+				top: 38px; left:50%; margin-left: -150px;
+				background-size: contain;
+			}
+			#pc .imgwrap{
+				width: 280px;
+				height: 140px;
+				top: 259px; left: 50%; margin-left: -140px;
+			}
+		}
+
+
+
+		.pcmainimg,
+		.pcsubimg{
+			position: absolute;
+			top:0; left:0;
+		}
+		
+			.pcmainimg{
+				width: 689px;
+				height: 1345px;
+				background: url(../images/lotte/pc_scroll.jpg) no-repeat;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+
+			
+			.pcsubimg{
+				width: 689px;
+				height: 392px;
+				background: url(../images/lotte/pc_sub_scroll.jpg) no-repeat center;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+			@media screen and (max-width:785px){
+				.pcmainimg{
+					width: 624px;
+					height: 625px;
+				}
+				.pcsubimg{
+					width: 320px;
+					height: 168Px;
+				}
+			}
+			@media screen and (max-width:450px){
+				.pcmainimg{
+					width: 270px;
+					height: 527px;
+				}
+				.pcsubimg{
+					width: 270px;
+					height: 139Px;
+				}
+			}
+		
+
+/********TABLET*******/
+		#tablet{
+			width: 100%;
+			position: relative;
+		}
+		@media screen and (min-width:786px){
+			#tablet{
+				height: 1180px;
+			}
+		}
+		@media screen and (max-width:785px){
+			#tablet{
+				height: 800px;
+				padding: 0 20px;
+				box-sizing: border-box;
+			}
+		}
+		#tablet h2{
+			margin-top: 0px;
+		}
+		.tb{
+			background:url(../images/lotte/tablet.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+		}
+		@media screen and (min-width:786px){
+			.tb{
+			width: 482px;
+			height: 700px;
+			top: 220px;
+			left: 50%;
+			margin-left: -241px;
+			}
+		}
+		
+		@media screen and (min-width: 786px){
+			#tablet .imgwrap{
+				width: 426px;
+				height: 569px;
+				top: 279px;
+				left: 50%;
+				margin-left: -213px;
+			}
+		}
+		@media screen and (max-width:785px){
+			.tb{
+			width: 290px;
+			height: 700px;
+			top: 104px;
+			left: 50%;
+			margin-left: -145px;
+			}
+		}
+		@media screen and (max-width: 785px){
+			#tablet .imgwrap{
+				width: 256px;
+				height: 341px;
+				top: 279px;
+				left: 50%;
+				margin-left: -128px;
+			}
+		}
+		
+		.tbmainimg,
+		.tbsubimg{
+			position: absolute;
+			top:0; left:0;
+		}
+		@media screen and (min-width: 786px){
+			.tbmainimg{
+				width: 416px;
+				height: 2216px;
+				background: url(../images/lotte/tb_scroll.jpg) no-repeat;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+			.tbsubimg{
+				width: 416px;
+				height: 570px;
+				background: url(../images/lotte/tb_sub_scroll.jpg) no-repeat;
+				background-size: cover;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+		}
+		@media screen and (max-width: 785px){
+			.tbmainimg{
+				width: 246px;
+				height: 1311px;
+				background: url(../images/lotte/tb_scroll.jpg) no-repeat;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+			.tbsubimg{
+				width: 246px;
+				height: 342px;
+				background: url(../images/lotte/tb_sub_scroll.jpg) no-repeat;
+				background-size: cover;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+		}
+		#tablet article h3{
+			margin-top: 783px;
+		}
+		@media screen and (max-width: 785px){
+		#tablet article h3{
+					margin-top: 550px;
+				}
+		}
+/********MOBILE*******/
+
+		#mobile{
+			width: 100%;
+			position: relative;
+			height: 900px;
+		}
+		@media screen and (max-width:785px){
+			#mobile{height: 800px;}
+		}
+		#mobile h2{
+			margin-top: 0px;
+		}
+		@media screen and (max-width:785px){
+			#mobile h2{
+			margin-top: 100px;
+		}
+		}
+		.mo{
+			background:url(../images/lotte/mobile.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+		}
+	
+			.mo{
+				width: 221px;
+				height: 538px;
+				top: 191px;
+				left: 50%;
+				margin-left: -108px;
+			}
+		
+			#mobile .imgwrap{
+				width: 188px;
+				height: 334px;
+				top: 290px;
+				left: 50%;
+				margin-left: -94px;
+				z-index: 10;
+			}
+		
+		.momainimg,
+		.mosubimg{
+			position: absolute;
+			top:0; left:0;
+		}
+		
+			.momainimg{
+				width: 179px;
+				height: 1261px;
+				background: url(../images/lotte/mo_scroll.jpg) no-repeat;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+			.mosubimg{
+				width: 179px;
+				height: 508px;
+				background: url(../images/lotte/mo_sub_scroll.jpg) no-repeat;
+				background-size: contain;
+				text-indent: -6000px;
+				overflow:hidden;
+			}
+		
+		#mobile article h3{
+			margin-top: 563px;
+		}
+@media screen and (max-width:767px){
+	article > .noto{
+		display: none;
+	}
+}
+		
+
+/********푸터*********/
+
+#main_footer{
+	width: 100%; padding: 20px 0;
+	background: #333;
+}
+.copyright{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+}
